@@ -3,7 +3,6 @@ var clone         = require('gulp-clone')                   // used to fork a st
 var order         = require('gulp-order')                   // reorder files in stream
 var uglify        = require('gulp-uglify')                  // minify js
 var rename        = require('gulp-rename')                  // rename file
-var insert        = require('gulp-insert')                  // add text to file
 var concat        = require('gulp-concat')                  // merge files together
 var stylus        = require('gulp-stylus')                  // turn stylus into css
 var addsrc        = require('gulp-add-src')                 // mid-stream gulp.src()
@@ -18,8 +17,8 @@ var templateCache = require('gulp-angular-templatecache')   // cache angular tem
 
 var paths = {
 	stylus: {
-		files: ['assets/css/*.styl'],
-		main: 'assets/css/style.styl'
+		files: ['assets/styl/*.styl'],
+		main: 'assets/styl/style.styl'
 	},
 	views: ['public/app/**/*.html'],
 	angular: ['public/app/*.js', 'public/app/**/*.js'],
@@ -31,7 +30,7 @@ var paths = {
 		'public/components/angular-sanitize/angular-sanitize.min.js',
 		'public/components/lodash/lodash.min.js'
 	],
-	output: 'public/dist/'
+	output: 'dist/'
 }
 
 var plumberOpts = {
