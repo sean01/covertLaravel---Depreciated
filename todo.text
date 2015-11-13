@@ -3,7 +3,7 @@ TODO LIST
 
 ==--== GENERAL ==--==
 
-Center video tag
+Center video tag - Done
 
 Give nav bar for video tag
 
@@ -18,6 +18,18 @@ Want to make it so the Answer, Disconnect, Settings/Misc are pills at the bottom
 
 
 ==--== VIDEO ==--==
-Get 
 
-Get localVideo to 
+
+Get picture in picture working - Done
+
+
+==--== SERVER ==--==
+Get server up and running
+
+Create server
+
+Create tables - User (done), Rooms.
+
+User - ID, Name, Password, is Admin - Done
+
+Rooms - ID, Name, Password, room id (user id?)

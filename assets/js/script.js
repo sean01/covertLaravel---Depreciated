@@ -1,5 +1,7 @@
 var comm = new Icecomm('QqwJhSuaHZgnL9nEH8usMffMBX5nEq2Al3K9RnWxqNhgVx5LO');
 
+
+
 comm.on('local', function(options) {
   document.querySelector('.localVideo').src = options.stream;
 });
@@ -16,4 +18,4 @@ comm.on('disconnect', function(options) {
 });
 
 
-comm.connect(location.hash);
+comm.connect(location.hash, {audio: false});
