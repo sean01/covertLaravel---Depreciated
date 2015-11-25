@@ -12,6 +12,7 @@
 <body>
 
 <div class="container">
+	
 	<div class="wrapper">
 		<header class="flex flex-s-between align-c">
 			
@@ -20,18 +21,21 @@
 			<nav>
 				<ul class="flex flex-s-between align-c">
 					
-
-					<li><a href="">Login</a></li>
-					<li><a href="#">Sign Up</a></li>
+					<li><a href="/auth/login">Login</a></li>
+					<li><a href="/auth/register">Sign Up</a></li>
 				</ul>
 			</nav>
 		</header>
 	</div>
 	
-	<div class="video-c">
-		<video class="localVideo" autoplay></video>
-	
+	<div class="roomContainer flex align-c flex-center">
+		<form>
+			<input type="text" id="roomName" class="std-input-text" placeholder="Enter a room name">
+		</form>
+		<a href="#" id="submitButton" class="btn-standard">Enter</a>
 	</div>
+	
+
 
 	
 

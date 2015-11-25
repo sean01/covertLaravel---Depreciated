@@ -22,12 +22,11 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/register', 'UserCtrl@create');
-# Save a user to the database
-Route::post('/user', 'UserCtrl@store');
-# Get a login form
-Route::get('/login', 'UserCtrl@login');
-# Log the user in
-Route::post('/auth', 'UserCtrl@authenticate');
-# Log the user out
-Route::get('/logout', 'UserCtrl@logout');
+// Authentication routes...
+Route::get('auth/login', 'Auth\AuthController@getLogin');
+Route::post('auth/login', 'Auth\AuthController@postLogin');
+Route::get('auth/logout', 'Auth\AuthController@getLogout');
+
+// Registration routes...
+Route::get('auth/register', 'Auth\AuthController@getRegister');
+Route::post('auth/register', 'Auth\AuthController@postRegister');

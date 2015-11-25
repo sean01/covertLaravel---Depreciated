@@ -3,7 +3,7 @@ TODO LIST
 
 ==--== GENERAL ==--==
 
-Get logins/register/logout sorted
+Get logins/register/logout sorted - DO THIS TODAY
 
 
 
@@ -44,3 +44,9 @@ Create register form
 
 	<div class="microphone-mute"><i class="fa fa-microphone-slash fa-4x"></i></div>
 		<div class="microphone"><i class="fa fa-microphone fa-4x"></i></div>
+
+Add this to video.php
+			<div class="video-c">	
+		<video class="localVideo" autoplay></video>
+	
+	</div>

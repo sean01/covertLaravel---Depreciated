@@ -4,7 +4,8 @@
 
 body
 	font-family Helvetica
-	background-color #2b3e50
+	background-color #7fbfd6 no-repeat center center fixed
+	background-image -webkit-radial-gradient(50% 50%, circle, #7fbfd6, #5598b0);
 	color #ebebeb
 	
 p li 
@@ -44,12 +45,88 @@ h1
 	align-items center
 
 .container
-	max-width 1000px
+	width 960px
+	min-height 100%
+	text-align center
 	
 
 .wrapper
 	margin 0 auto
 	padding 0 1em
+
+//ROOM
+.roomContainer
+	height 500px	
+	color #fff
+	font-family Lato
+	
+input[type='submit']:hover, button:hover, .btn-standard:hover
+	text-decoration none
+	background-color #3a7ea6
+	background-image -webkit-linear-gradient(#3a7ea6, #3a7ea6)
+	background-image linear-gradient(#3a7ea6, #3a7ea6)
+	color #fff
+		
+	
+
+
+	
+
+input[type="text"]
+	border solid 2px #529ec8
+	border-radius 5px
+	height 58px
+	font-size 24px
+	color #333
+	text-align center
+	outline none
+	
+
+
+input
+	&.std-input-text
+		display inline-block
+		margin 8px 0
+		width 400px
+		padding 0 20px
+		text-align center
+		
+		
+
+input[type="text"]:focus 
+	border-color #286B92
+	
+
+
+
+input[type='submit'], button, .btn-standard	
+	display inline-block
+	border-radius 4px
+	cursor pointer
+	border 1px solid #205e82
+	padding 12px 40px
+	font-weight 200
+	font-size 22px
+	text-decoration none
+	background-color #529ec8    
+	color #fff 
+	background-image -webkit-linear-gradient(#529ec8, #205e82)
+	background-image linear-gradient(#529ec8, #205e82)
+	
+
+#submitButton 
+	display block
+	color white
+	font-family 'Helvetica'
+  	
+  		&:hover, :active 
+		color white
+		text-decoration none
+		underline none 	
+
+		
+	
+
 // NAV
 
 .nav-tabs

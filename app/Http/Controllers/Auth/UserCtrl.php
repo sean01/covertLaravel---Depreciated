@@ -17,19 +17,20 @@ class UserCtrl extends Controller{
 	
 	public function create(){
 		return View::make('register');
-
-		
+	
 	}
 
 	public function store(Request $request){
 
     	$user = new User();
 
-        $user->fill($request->all());
+    	$user->name = $request->get('name');
+    	$user->email = $request->get('email');
+    	$user->password = Hash::make($request->get('password'));
 
-        $user->save();
+    	$user->save();
 
-        return $user;
+    	return redirect('/login');
     
 
 	}
@@ -39,7 +40,15 @@ class UserCtrl extends Controller{
 	}
 
 	public function authenticate(Request $request){
+		$formdata = $request->only('email', 'password');
 
+        $success = Auth::attempt($formdata);
+
+        if($success){
+            return redirect('/');
+        }else{
+            return redirect('login');
+        }
 
 	}
 
