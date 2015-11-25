@@ -1,0 +1,46 @@
+TODO LIST
+---------
+
+==--== GENERAL ==--==
+
+Get logins/register/logout sorted
+
+
+
+==--== NAV ==--==
+Create NAV, include login/log out/register/login as guest.
+
+
+
+==--== VIDEO ==--==
+
+	-- Video settings nav. Basically just have volume mute/ volume unmute (not that important) and mic mute/mic unmute (important)
+
+
+
+==--== SERVER ==--==
+Get server up and running
+
+Create server
+
+Create tables - User (done), Rooms.
+
+User - ID, Name, Password, is Admin - Done
+
+Rooms - ID, Name, Password, room id (user id?)
+
+Have added laravel.
+
+
+==--== LOGINS ==--==
+
+Create login form
+
+Create register form
+
+
+
+-- PUT THESE BACK IN VIDEO-C SECTION
+
+	<div class="microphone-mute"><i class="fa fa-microphone-slash fa-4x"></i></div>
+		<div class="microphone"><i class="fa fa-microphone fa-4x"></i></div>

@@ -17,8 +17,8 @@ var templateCache = require('gulp-angular-templatecache')   // cache angular tem
 
 var paths = {
 	stylus: {
-		files: ['assets/styl/*.styl'],
-		main: 'assets/styl/style.styl'
+		files: ['public/assets/styl/*.styl'],
+		main: 'public/assets/styl/style.styl'
 	},
 	views: ['public/app/**/*.html'],
 	angular: ['public/app/*.js', 'public/app/**/*.js'],
@@ -30,7 +30,7 @@ var paths = {
 		'public/components/angular-sanitize/angular-sanitize.min.js',
 		'public/components/lodash/lodash.min.js'
 	],
-	output: 'dist/'
+	output: 'public/dist/'
 }
 
 var plumberOpts = {
