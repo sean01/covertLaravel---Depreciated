@@ -29,10 +29,13 @@
 	</div>
 	
 	<div class="roomContainer flex align-c flex-center">
-		<form>
+		
+		<form action="">
 			<input type="text" id="roomName" class="std-input-text" placeholder="Enter a room name">
+		
+			<button type="submit" id="submitButton" class="btn-standard">Enter</button>
 		</form>
-		<a href="#" id="submitButton" class="btn-standard">Enter</a>
+
 	</div>
 	
 

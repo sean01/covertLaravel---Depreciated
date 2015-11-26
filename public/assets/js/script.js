@@ -1,7 +1,5 @@
 var comm = new Icecomm('QqwJhSuaHZgnL9nEH8usMffMBX5nEq2Al3K9RnWxqNhgVx5LO');
 
-
-
 comm.on('local', function(options) {
   document.querySelector('.localVideo').src = options.stream;
 });
@@ -24,29 +22,14 @@ comm.connect(location.hash, {audio: false});
 // Index JS
 
 $("#roomName").focus();
-$("form").submit(false);
 
-function goToRoom(){
+	
+	// this function just sends you to a url like /room/blah where 'blah' is what was typed in the input
+function goToRoom(e) {
+	e.preventDefault();
 
-	console.log("goToRoom"); 
-	
-	var roomName = $.trim($("#roomName").val());
-	
-	console.log(roomName); 
-	
-	if(roomName.length <= 0 )
-		return;
-	
-	$("#roomContainer").fadeOut('slow');
-		
-	window.location = "/" + roomName;
+    window.location.href = '/room/' + $.trim($('#roomName').val())
+
 }
 
-$('#submitButton').click( goToRoom );
-
-$('#roomName').keypress(function(e){
-	if (e.keyCode === 13) goToRoom();
-});
-
-
-window.onresize = verticalCenter;
+$('form').on('submit', goToRoom);

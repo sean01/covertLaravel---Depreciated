@@ -22,6 +22,11 @@ Route::get('/', function () {
     return view('index');
 });
 
+// Room routing
+Route::get('/room/{roomID}', function($roomID) {
+    // this will load room.blade.php
+    return view('room', ['roomID' => $roomID]);
+});
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');
