@@ -50,3 +50,10 @@ Add this to video.php
 		<video class="localVideo" autoplay></video>
 	
 	</div>
+
+
+	===ASK NICK===
+
+	auth/login and auth/register is no longer working
+
+	compare against empty string, give an error.

@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato:100,200,400,300,300italic,900italic,900,700italic,700,400italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../dist/style.min.css">
+
 </head>
 <body>
 <script>
@@ -23,7 +24,7 @@
 
 
 		<div>
-			<h3 class="flex-1">Click here to copy your room, then send it to a friend!</h3>
+			<h3 class="flex-1"></h3>
 		</div>
 	
 	
@@ -34,9 +35,11 @@
 		</div>
 
 		<nav>
-			<ul class="flex flex-s-between align-c">
-				
-					
+			<ul class="flex flex-s-between align-c ">
+				<a href="/"><i class="fa fa-phone fa-4x"></i></a>
+				<button></button>
+				<a href="#">Camera</a>
+				<a href="#">Volume Controls</a>	
 			</ul>
 		</nav>
 	

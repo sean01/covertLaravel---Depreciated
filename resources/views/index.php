@@ -21,8 +21,14 @@
 			<nav>
 				<ul class="flex flex-s-between align-c">
 					
-					<li><a href="/auth/login">Login</a></li>
-					<li><a href="/auth/register">Sign Up</a></li>
+					<? if(Auth::check()): ?>
+						<li><a href="auth/user"><i class="fa fa-user"></i> <?= ucfirst(Auth::user()->name) ?></a></li>
+					
+						<li><a href="auth/logout"><i class="fa fa-reply"></i>  Log out</a></li>						
+					<? else: ?>
+						<li><a href="auth/register"><i class="fa fa-user-plus"></i>  Register</a></li>
+						<li><a href="auth/login"><i class="fa fa-share"></i>  Login</a></li>
+					<? endif ?>
 				</ul>
 			</nav>
 		</header>
@@ -30,7 +36,7 @@
 	
 	<div class="roomContainer flex align-c flex-center">
 		
-		<form action="">
+		<form action="" class="flex flex-col align-c">
 			<input type="text" id="roomName" class="std-input-text" placeholder="Enter a room name">
 		
 			<button type="submit" id="submitButton" class="btn-standard">Enter</button>

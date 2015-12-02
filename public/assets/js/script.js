@@ -28,8 +28,14 @@ $("#roomName").focus();
 function goToRoom(e) {
 	e.preventDefault();
 
-    window.location.href = '/room/' + $.trim($('#roomName').val())
+	var roomName = $.trim($('#roomName').val());
+
+	if(!roomName){ return; } 
+
+    window.location.href = '/room/' + roomName;
 
 }
 
 $('form').on('submit', goToRoom);
+
+
