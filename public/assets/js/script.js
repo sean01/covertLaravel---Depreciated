@@ -16,7 +16,7 @@ comm.on('disconnect', function(options) {
 });
 
 
-comm.connect(location.hash, {audio: false});
+comm.connect(location.hash, {audio: true});
 
 
 // Index JS
@@ -28,8 +28,13 @@ $("#roomName").focus();
 function goToRoom(e) {
 	e.preventDefault();
 
-    window.location.href = '/room/' + $.trim($('#roomName').val())
+	var roomName = $.trim($('#roomName').val());
+
+	if(!roomName){ return; } 
+
+    window.location.href = '/covert/room/' + roomName;
 
 }
 
 $('form').on('submit', goToRoom);
+
