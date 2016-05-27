@@ -32,9 +32,17 @@ function goToRoom(e) {
 
 	if(!roomName){ return; } 
 
+<<<<<<< HEAD
     window.location.href = '/covert/room/' + roomName;
+=======
+    window.location.href = '/room/' + roomName;
+>>>>>>> origin/master
 
 }
 
 $('form').on('submit', goToRoom);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master

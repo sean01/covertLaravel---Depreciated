@@ -35,11 +35,20 @@
 		</header>
 	</div>
 	
+<<<<<<< HEAD
 	<div class="roomContainer flex flex-center align-c align-self">	
 			
 		<form action="" class="align-c flex-center flex-col align-self">
 			<input type="text" id="roomName" class="std-input-text" placeholder="Enter a room name">		
 			<button type="submit" id="submitButton" class="btn-standard" style="margin: auto">Enter</button>
+=======
+	<div class="roomContainer flex align-c flex-center">
+		
+		<form action="" class="flex flex-col align-c">
+			<input type="text" id="roomName" class="std-input-text" placeholder="Enter a room name">
+		
+			<button type="submit" id="submitButton" class="btn-standard">Enter</button>
+>>>>>>> origin/master
 		</form>
 
 	</div>
