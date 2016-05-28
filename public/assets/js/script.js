@@ -34,15 +34,23 @@ function goToRoom(e) {
 
 <<<<<<< HEAD
     window.location.href = '/covert/room/' + roomName;
+
+=======
+<<<<<<< HEAD
+    window.location.href = '/covert/room/' + roomName;
 =======
     window.location.href = '/room/' + roomName;
 >>>>>>> origin/master
+>>>>>>> 93503b3c38d69e0670429699df359d91ac1f36a8
 
 }
 
 $('form').on('submit', goToRoom);
+<<<<<<< HEAD
+=======
 
 <<<<<<< HEAD
 =======
 
 >>>>>>> origin/master
+>>>>>>> 93503b3c38d69e0670429699df359d91ac1f36a8
