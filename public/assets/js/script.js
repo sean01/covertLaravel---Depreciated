@@ -34,7 +34,7 @@ function goToRoom(e) {
 
     window.location.href = '/covert/room/' + roomName;
 
+
 }
 
 $('form').on('submit', goToRoom);
-

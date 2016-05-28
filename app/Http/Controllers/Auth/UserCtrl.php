@@ -16,6 +16,9 @@ use App\User;
 class UserCtrl extends Controller{
 	
 	public function create(){
+
+		if (Auth::check()) return Redirect::to('/');
+		
 		return View::make('register');
 	
 	}
@@ -47,7 +50,7 @@ class UserCtrl extends Controller{
         if($success){
             return redirect('/');
         }else{
-            return redirect('login');
+            return redirect('/login');
         }
 
 	}
